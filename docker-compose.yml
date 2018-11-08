@@ -20,8 +20,9 @@ services:
       - .:/var/www/app
       - ./.docker/nginx/nginx.conf:/etc/nginx/nginx.conf
       - ./.docker/nginx/sites-enabled:/etc/nginx/sites-enabled
+      - ./var/log/nginx:/var/log/nginx
     labels:
-      fr.laposte.server.role: "reserve-proxy"
+      fr.ryuutama.server.role: "reserve-proxy"
       traefik.enable: "true"
       traefik.port: "80"
       traefik.backend: "nginx.ryuutama.local"

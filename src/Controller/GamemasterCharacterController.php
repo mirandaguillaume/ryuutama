@@ -15,7 +15,6 @@ class GamemasterCharacterController
     public function listGamemasterCharacter()
     {
         // TODO Function
-        die('test');
     }
 
     public function showGamemasterCharacter($id)
