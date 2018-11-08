@@ -40,6 +40,6 @@ services:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: ryuutama
       MYSQL_USER: dev
-      MYSQL_PASSWORD: mysqlp
+      MYSQL_PASSWORD: devp
       MYSQL_LOG_CONSOLE: 'false'
     command: --socket=/tmp/mysqld.sock
