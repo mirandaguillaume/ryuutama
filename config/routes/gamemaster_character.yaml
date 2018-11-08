@@ -1,0 +1,24 @@
+gm_character_list:
+    path: /list
+    controller: App\Controller\GamemasterCharacterController::listGamemasterCharacter
+    methods: [GET]
+
+gm_character_show:
+    path: /{id}
+    controller: App\Controller\GamemasterCharacterController::showGamemasterCharacter
+    methods: [GET]
+
+gm_character_edit:
+    path: /{id}/edit
+    controller: App\Controller\GamemasterCharacterController::editGamemasterCharacter
+    methods: [PUT]
+
+gm_character_create:
+    path: /create
+    controller: App\Controller\GamemasterCharacterController::createGamemasterCharacter
+    methods: [POST]
+
+gm_character_delete:
+    path: /{id}
+    controller: App\Controller\GamemasterCharacterController::deleteGamemasterCharacter
+    methods: [DELETE]

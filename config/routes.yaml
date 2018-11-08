@@ -1,0 +1,3 @@
+gamemaster_character:
+    prefix: character/gamemaster
+    resource: 'routes/gamemaster_character.yaml'

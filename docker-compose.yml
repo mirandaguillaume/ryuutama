@@ -1,0 +1,44 @@
+# docker-compose.yml
+version: '2.1'
+
+services:
+  php:
+    build:
+      context: ./.docker/php7-fpm
+      args:
+        TIMEZONE: ${TIMEZONE}
+        APP_ENV: ${APP_ENV}
+    volumes:
+      - .:/var/www/app
+
+  nginx:
+    build:
+      context: ./.docker/nginx
+    ports:
+      - ${HTTP_PORT}
+    volumes:
+      - .:/var/www/app
+      - ./.docker/nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ./.docker/nginx/sites-enabled:/etc/nginx/sites-enabled
+    labels:
+      fr.laposte.server.role: "reserve-proxy"
+      traefik.enable: "true"
+      traefik.port: "80"
+      traefik.backend: "nginx.ryuutama.local"
+      traefik.frontend.rule: "Host:ryuutama.local,ryuutama.local.dev"
+
+  mysql:
+#    image: mysql:5.7
+    image: mysql/mysql-server:5.7
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./.docker/mysql:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_HOST: '%'
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: ryuutama
+      MYSQL_USER: dev
+      MYSQL_PASSWORD: mysqlp
+      MYSQL_LOG_CONSOLE: 'false'
+    command: --socket=/tmp/mysqld.sock
