@@ -21,8 +21,6 @@ trait CharacterBasic
      */
     private $playerName;
 
-    private $createdAt;
-
     /**
      * @return string
      */
