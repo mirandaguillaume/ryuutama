@@ -9,6 +9,9 @@
 namespace App\Entity;
 
 
+use App\Entity\Artefact;
+use App\Entity\DragonColor;
+
 class GamemasterCharacter implements Entity
 {
     use CharacterBasic;
@@ -51,7 +54,7 @@ class GamemasterCharacter implements Entity
     /**
      * @return \App\Entity\DragonColor
      */
-    public function getColor(): \App\Entity\DragonColor
+    public function getColor(): DragonColor
     {
         return $this->color;
     }
@@ -59,7 +62,7 @@ class GamemasterCharacter implements Entity
     /**
      * @param \App\Entity\DragonColor $color
      */
-    public function setColor(\App\Entity\DragonColor $color): void
+    public function setColor(DragonColor $color): void
     {
         $this->color = $color;
     }
@@ -83,7 +86,7 @@ class GamemasterCharacter implements Entity
     /**
      * @return \App\Entity\Artefact
      */
-    public function getArtefact(): \App\Entity\Artefact
+    public function getArtefact(): Artefact
     {
         return $this->artefact;
     }
@@ -91,7 +94,7 @@ class GamemasterCharacter implements Entity
     /**
      * @param \App\Entity\Artefact $artefact
      */
-    public function setArtefact(\App\Entity\Artefact $artefact): void
+    public function setArtefact(Artefact $artefact): void
     {
         $this->artefact = $artefact;
     }

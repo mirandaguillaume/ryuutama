@@ -12,27 +12,27 @@ namespace App\Controller;
 class GamemasterCharacterController
 {
 
-    public function listGamemasterCharacter()
+    public function listGamemasterCharacter(): void
     {
         // TODO Function
     }
 
-    public function showGamemasterCharacter($id)
+    public function showGamemasterCharacter($id): void
     {
         // TODO Function
     }
 
-    public function editGamemasterCharacter($id)
+    public function editGamemasterCharacter($id): void
     {
         // TODO Function
     }
 
-    public function createGamemasterCharacter()
+    public function createGamemasterCharacter(): void
     {
         // TODO Function
     }
 
-    public function deleteGamemasterCharacter($id)
+    public function deleteGamemasterCharacter($id): void
     {
         // TODO Function
     }

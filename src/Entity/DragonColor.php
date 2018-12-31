@@ -11,10 +11,10 @@ namespace App\Entity;
 
 class DragonColor implements Entity
 {
-    const BLUE = 'blue';
-    const GREEN = 'green';
-    const BLACK = 'black';
-    const RED = 'red';
+    public const BLUE = 'blue';
+    public const GREEN = 'green';
+    public const BLACK = 'black';
+    public const RED = 'red';
 
     /**
      * @var string

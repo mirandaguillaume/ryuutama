@@ -23,6 +23,7 @@ abstract class BasicORMService
     /**
      * BasicORMService constructor.
      * @param \Doctrine\ORM\EntityManagerInterface $entityManager
+     * @param $resourceName
      */
     public function __construct(EntityManagerInterface $entityManager, $resourceName)
     {
@@ -42,24 +43,24 @@ abstract class BasicORMService
      * @param array $criterias
      * @return object[]
      */
-    public function findBy(array $criterias)
+    public function findBy(array $criterias): array
     {
         return $this->repository->findBy($criterias);
     }
 
-    public function create(Entity $data)
+    public function create(Entity $data): void
     {
         $this->repository->persist($data);
         $this->repository->flush();
     }
 
-    public function update(Entity $data)
+    public function update(Entity $data): void
     {
         $this->repository->merge($data);
         $this->repository->flush();
     }
 
-    public function delete(Entity $data)
+    public function delete(Entity $data): void
     {
         $this->repository->remove($data);
         $this->repository->flush();

@@ -9,6 +9,8 @@
 namespace App\Entity;
 
 
+use App\Entity\DragonColor;
+
 class Artefact implements Entity
 {
     /**
@@ -61,7 +63,7 @@ class Artefact implements Entity
     /**
      * @return \App\Entity\DragonColor
      */
-    public function getColor(): \App\Entity\DragonColor
+    public function getColor(): DragonColor
     {
         return $this->color;
     }
@@ -69,7 +71,7 @@ class Artefact implements Entity
     /**
      * @param \App\Entity\DragonColor $color
      */
-    public function setColor(\App\Entity\DragonColor $color): void
+    public function setColor(DragonColor $color): void
     {
         $this->color = $color;
     }

@@ -9,6 +9,8 @@
 namespace App\Entity;
 
 
+use App\Entity\DragonColor;
+
 class ColoredBreath extends DragonBreath
 {
     /**
@@ -19,7 +21,7 @@ class ColoredBreath extends DragonBreath
     /**
      * @return \App\Entity\DragonColor
      */
-    public function getColor(): \App\Entity\DragonColor
+    public function getColor(): DragonColor
     {
         return $this->color;
     }
@@ -27,7 +29,7 @@ class ColoredBreath extends DragonBreath
     /**
      * @param \App\Entity\DragonColor $color
      */
-    public function setColor(\App\Entity\DragonColor $color): void
+    public function setColor(DragonColor $color): void
     {
         $this->color = $color;
     }

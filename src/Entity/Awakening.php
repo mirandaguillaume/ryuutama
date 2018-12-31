@@ -11,8 +11,8 @@ namespace App\Entity;
 
 class Awakening implements Entity
 {
-    const BATTLE_TYPE = 'battle';
-    const TRAVEL_TYPE = 'travel';
+    public const BATTLE_TYPE = 'battle';
+    public const TRAVEL_TYPE = 'travel';
 
     /**
      * @var string
