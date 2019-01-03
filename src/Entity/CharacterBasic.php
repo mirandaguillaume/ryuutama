@@ -3,11 +3,10 @@
  * Created by PhpStorm.
  * User: guillaume
  * Date: 08/11/18
- * Time: 23:53
+ * Time: 23:53.
  */
 
 namespace App\Entity;
-
 
 trait CharacterBasic
 {

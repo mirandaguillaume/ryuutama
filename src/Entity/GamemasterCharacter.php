@@ -3,11 +3,10 @@
  * Created by PhpStorm.
  * User: guillaume
  * Date: 08/11/18
- * Time: 23:52
+ * Time: 23:52.
  */
 
 namespace App\Entity;
-
 
 class GamemasterCharacter implements Entity
 {
@@ -19,7 +18,7 @@ class GamemasterCharacter implements Entity
     private $color;
 
     /**
-     * @var integer
+     * @var int
      */
     private $level;
 
@@ -34,7 +33,7 @@ class GamemasterCharacter implements Entity
     private $inscription;
 
     /**
-     * @var integer
+     * @var int
      */
     private $breath_points;
 

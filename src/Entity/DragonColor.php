@@ -3,11 +3,10 @@
  * Created by PhpStorm.
  * User: guillaume
  * Date: 08/11/18
- * Time: 23:59
+ * Time: 23:59.
  */
 
 namespace App\Entity;
-
 
 class DragonColor implements Entity
 {

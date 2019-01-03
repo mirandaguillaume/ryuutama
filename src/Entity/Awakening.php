@@ -3,11 +3,10 @@
  * Created by PhpStorm.
  * User: guillaume
  * Date: 09/11/18
- * Time: 00:17
+ * Time: 00:17.
  */
 
 namespace App\Entity;
-
 
 class Awakening implements Entity
 {
@@ -20,7 +19,7 @@ class Awakening implements Entity
     private $name;
 
     /**
-     * @var integer
+     * @var int
      */
     private $cost;
 
