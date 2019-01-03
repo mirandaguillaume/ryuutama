@@ -1,9 +1,4 @@
-preset: recommended
-
-risky: true
-
-enabled:
-    - symfony
+preset: symfony
 
 finder:
     path: 'src/'
