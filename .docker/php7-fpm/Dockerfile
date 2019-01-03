@@ -1,6 +1,6 @@
 
 # See https://github.com/docker-library/php/blob/master/7.1/fpm/Dockerfile
-FROM php:7.1-fpm-alpine
+FROM php:7.2-fpm-alpine
 
 LABEL maintainer="Guillaume MIRANDA <guillaume11miranda@gmail.com>"
 

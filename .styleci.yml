@@ -1,0 +1,9 @@
+preset: recommended
+
+risky: true
+
+enabled:
+    - symfony
+
+finder:
+    path: 'src/'
