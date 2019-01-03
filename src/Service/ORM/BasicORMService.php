@@ -3,18 +3,16 @@
  * Created by PhpStorm.
  * User: guillaume
  * Date: 08/11/18
- * Time: 23:44
+ * Time: 23:44.
  */
 
 namespace App\Service\ORM;
-
 
 use App\Entity\Entity;
 use Doctrine\ORM\EntityManagerInterface;
 
 abstract class BasicORMService
 {
-
     /**
      * @var \Doctrine\ORM\EntityManagerInterface
      */
@@ -22,6 +20,7 @@ abstract class BasicORMService
 
     /**
      * BasicORMService constructor.
+     *
      * @param \Doctrine\ORM\EntityManagerInterface $entityManager
      */
     public function __construct(EntityManagerInterface $entityManager, $resourceName)
@@ -31,6 +30,7 @@ abstract class BasicORMService
 
     /**
      * @param array $criterias
+     *
      * @return null|object
      */
     public function findOneBy(array $criterias)
@@ -40,6 +40,7 @@ abstract class BasicORMService
 
     /**
      * @param array $criterias
+     *
      * @return object[]
      */
     public function findBy(array $criterias)

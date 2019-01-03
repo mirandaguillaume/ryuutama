@@ -3,11 +3,10 @@
  * Created by PhpStorm.
  * User: guillaume
  * Date: 09/11/18
- * Time: 00:01
+ * Time: 00:01.
  */
 
 namespace App\Entity;
-
 
 class Artefact implements Entity
 {
