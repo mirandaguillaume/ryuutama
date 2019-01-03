@@ -3,15 +3,15 @@
  * Created by PhpStorm.
  * User: guillaume
  * Date: 09/11/18
- * Time: 00:17
+ * Time: 00:17.
  */
 
 namespace App\Entity;
 
-
 class Awakening implements Entity
 {
     public const BATTLE_TYPE = 'battle';
+
     public const TRAVEL_TYPE = 'travel';
 
     /**
@@ -20,7 +20,7 @@ class Awakening implements Entity
     private $name;
 
     /**
-     * @var integer
+     * @var int
      */
     private $cost;
 

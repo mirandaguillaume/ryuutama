@@ -3,13 +3,10 @@
  * Created by PhpStorm.
  * User: guillaume
  * Date: 09/11/18
- * Time: 00:06
+ * Time: 00:06.
  */
 
 namespace App\Entity;
-
-
-use App\Entity\DragonColor;
 
 class ColoredBreath extends DragonBreath
 {
